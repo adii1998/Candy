@@ -20,6 +20,12 @@ body {
     margin-top: 100px;
     margin-bottom: 100px;
 }
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: #EA1C2C;;
+}
 
 #mainNavbar {
     font-size: 1.5rem;
@@ -62,6 +68,14 @@ body {
         font-size: 2rem;
     }
 }
+.nav-link{
+    color: #f498b8;
+}
+#contacts{
+    display: flex;
+     justify-content: space-around;
+
+}
 footer{
     display: block;
 }
@@ -74,18 +88,6 @@ footer .mb-5{
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-}
-.mx-0 {
-    margin-left: 0 !important;
-}
-.mr-0, .mx-0 {
-    margin-right: 0 !important;
-}
-.flex-column {
-    flex-direction: column !important;
-}
-.d-flex {
-    display: flex !important;
 }
 
 
