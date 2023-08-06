@@ -21,7 +21,7 @@ body {
     margin-bottom: 100px;
 }
 .nav-link{
-    color: white;
+    color:#f498b8; ;
 }
 .nav-link:hover{
     color: #EA1C2C;
@@ -81,7 +81,7 @@ footer .mb-5{
     margin-right: auto;
     margin-left: auto;
 }
-.mx-0 {
+/* .mx-0 {
     margin-left: 0 !important;
 }
 .mr-0, .mx-0 {
@@ -92,7 +92,7 @@ footer .mb-5{
 }
 .d-flex {
     display: flex !important;
-}
+} */
 
 
 
