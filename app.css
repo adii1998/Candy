@@ -2,6 +2,7 @@
 body {
     background: #f5d9d5;
     font-family: "Nunito", sans-serif;
+    scroll-behavior: smooth;
 }
 
 .blurb h2 {
@@ -22,7 +23,8 @@ body {
     margin-bottom: 100px;
 }
 .nav-link{
-    color:#f498b8; ;
+    color:#f498b8;
+  
 }
 .nav-link:hover{
     color: #EA1C2C;
