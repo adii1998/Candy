@@ -38,7 +38,7 @@
                     <a href="#about" class="nav-link">ABOUT</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#tickets" class="nav-link">TICKETS</a>
+                    <a href="#ticket" class="nav-link">TICKETS</a>
                 </li>
             </ul>
         </div>
@@ -124,6 +124,76 @@
             </div>
         </div>
     </section>
+
+    <div class="modal fade" id="bookYourTickets" tabindex="-1" role="dialog" aria-labelledby="bookYourTickets" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Book your tickets</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group row align-items-center">
+                  <div class="col-6">
+                    <label class="mb-0" for="peopleAmount">How many people are there in your group?</label>
+                  </div>
+                  <div class="col-6">
+                    <select id="peopleAmount" class="form-control">
+                      <option selected>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                      <option>13</option>
+                      <option>14</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-4">
+                    <label for="dataVisit" class="mb-0">Data of visit</label>
+                  </div>
+                  <div class="col-8">
+                    <input id="dataVisit" type="date" name="bday" max="3000-12-31" 
+                       min="1000-01-01" class="form-control">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-4">
+                    <label for="yourName" class="mb-0">Name</label>
+                  </div>
+                  <div class="col-8">
+                    <input  class="form-control" id="yourName" type="text" placeholder="John Doe">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col-4">
+                    <label for="yourEmail" class="mb-0">Email</label>
+                  </div>
+                  <div class="col-8">
+                    <input  class="form-control" id="yourEmail" type="email" placeholder="johnjoe@example.com">
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <footer id="contacts" class="mb-5">
         <div class="container-fluid ">
             <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-md-center mx-0">
@@ -170,7 +240,7 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-    <script>
+     <script>
         $(function () {
             $(document).scroll(function () {
                 var $nav = $("#mainNavbar");
@@ -208,6 +278,26 @@
                 }
             });
         });
+
+            $(function () {
+                $(document).scroll(function () {
+                    var $nav = $("#custom__main-navbar");
+                    $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+                });
+            });
+        // </script>
+        // <!-- <script>
+        //   $(document).ready(function(){
+        //     $("a[href*=#]").on("click", function(e){
+        //         var anchor = $(this);
+        //         $('html, body').stop().animate({
+        //             scrollTop: $(anchor.attr('href')).offset().top
+        //         }, 777);
+        //         e.preventDefault();
+        //         return false;
+        //     });
+        //   }); -->
+        </script>
     </script>
 </body>
 
